@@ -10,7 +10,6 @@ class BasePage:
 
     def open(self):
         with allure.step(f"Переходим на сайт: {self.base_url}"):
-            self.browser.maximize_window()
             return self.browser.get(self.base_url)
 
     def find(self, locator, time=15):

@@ -6,6 +6,6 @@ mkdir -p allure-results-local
 
 rm -rf allure-report
 
-pytest tests
+pytest tests/test.py
 
 allure_generic/bin/allure generate allure-results-local
